@@ -3,19 +3,19 @@ import { motion } from "framer-motion";
 const categories = [
   {
     title: "Programming",
-    skills: ["Python", "C++", "SQL (MySQL)"],
+    skills: ["C", "Python", "TypeScript"],
   },
   {
     title: "Cybersecurity",
-    skills: ["Web Vulnerabilities (SSTI, RSA)", "CTF Design & Exploitation", "Penetration Testing Concepts"],
+    skills: ["CTF", "Web Exploitation", "Forensics", "Cryptography"],
   },
   {
     title: "Tools & Technologies",
-    skills: ["Linux", "Docker", "MySQL", "Git", "Networking (CCNA)"],
+    skills: ["Linux", "MySQL", "Networking Basics", "n8n"],
   },
   {
-    title: "Concepts",
-    skills: ["Secure Authentication", "Encryption & Tokens", "Backend Logic Design"],
+    title: "Other",
+    skills: ["Data Structures & Algorithms (LeetCode)"],
   },
 ];
 

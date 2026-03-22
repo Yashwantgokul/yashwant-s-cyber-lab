@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, FileDown } from "lucide-react";
+import { Mail, Github, Linkedin, FileDown, ExternalLink } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -20,7 +20,7 @@ const ContactSection = () => {
 
           <div className="flex flex-wrap justify-center gap-4 mb-8">
             <a
-              href="mailto:yashwant.dev@example.com"
+              href="mailto:yggamer111@gmail.com"
               className="inline-flex items-center gap-2 bg-primary text-primary-foreground px-5 py-3 rounded-lg font-medium hover:opacity-90 transition-opacity glow-primary"
             >
               <Mail size={18} /> Email Me
@@ -34,11 +34,17 @@ const ContactSection = () => {
           </div>
 
           <div className="flex justify-center gap-6">
-            <a href="#" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
+            <a href="https://github.com/Yashwantgokul" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="GitHub">
               <Github size={22} />
             </a>
-            <a href="#" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="LinkedIn">
+            <a href="https://www.linkedin.com/in/yashwant-gokul-p-b25a16218/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="LinkedIn">
               <Linkedin size={22} />
+            </a>
+            <a href="https://leetcode.com/u/yashwantgokul1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LeetCode">
+              <ExternalLink size={22} />
+            </a>
+            <a href="https://tryhackme.com/p/yashwantgokul1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="TryHackMe">
+              <ExternalLink size={22} />
             </a>
           </div>
         </motion.div>

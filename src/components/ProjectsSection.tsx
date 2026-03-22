@@ -1,34 +1,56 @@
 import { motion } from "framer-motion";
-import { Lock, FlaskConical, Bot, Globe } from "lucide-react";
+import { Lock, FlaskConical, Globe, Flame, FileSearch, Brain, Shield, Construction } from "lucide-react";
 
 const projects = [
   {
-    icon: Lock,
-    title: "Password Manager System",
-    desc: "Secure credential storage system using MySQL backend with user-based tables, email-based login, and encryption concepts.",
-    tech: ["Python", "MySQL", "Encryption"],
+    icon: Globe,
+    title: "CiviTrack — SIH Project",
+    desc: "Government issue complaint system with RAG-based data retrieval for admin access, AI-based task assignment, and workflow automation using n8n.",
+    tech: ["RAG", "AI", "n8n", "Full-Stack"],
     color: "primary" as const,
+  },
+  {
+    icon: Flame,
+    title: "SmartG — Gas Leak & Fire Detection",
+    desc: "IoT-based gas leak and fire detection using ESP32 & MQ-2 sensor. Real-time monitoring, emergency alerts via Telegram & Twilio, PDF incident reports with SHA-256 integrity.",
+    tech: ["ESP32", "Flask", "MySQL", "Twilio", "Telegram Bot"],
+    color: "secondary" as const,
+  },
+  {
+    icon: Lock,
+    title: "Enigma Password Manager",
+    desc: "Secure credential storage system with OTP-based authentication using Python and MySQL backend.",
+    tech: ["Python", "MySQL", "OTP Auth"],
+    color: "primary" as const,
+  },
+  {
+    icon: Brain,
+    title: "CryptoTaxPro",
+    desc: "AI-powered crypto tax tool with automation-focused system for simplified tax calculations.",
+    tech: ["AI", "Automation"],
+    color: "secondary" as const,
+  },
+  {
+    icon: Shield,
+    title: "VulnShield",
+    desc: "Security-focused Python project designed for vulnerability handling and detection.",
+    tech: ["Python", "Security"],
+    color: "primary" as const,
+  },
+  {
+    icon: FileSearch,
+    title: "CTF Challenges",
+    desc: "Custom challenges: Cathedral Collapse (Forensics), Hymn of the Handshake (Packet Analysis), Reconfiguration Terminal (Web Exploitation).",
+    tech: ["Forensics", "Packet Analysis", "Web Exploitation"],
+    color: "secondary" as const,
   },
   {
     icon: FlaskConical,
     title: "CTF Platform (Docker-Based)",
     desc: "Custom cybersecurity challenges with real-world attack scenarios including SSTI exploitation, RSA challenges, and AI exploitation simulation.",
     tech: ["Docker", "Python", "Web Backend"],
-    color: "secondary" as const,
-  },
-  {
-    icon: Bot,
-    title: "AI Simulation Challenge",
-    desc: "Simulated AI system for exploitation-based CTF — bypass logic to retrieve hidden flags through a chat interface.",
-    tech: ["Python", "Backend Logic"],
     color: "primary" as const,
-  },
-  {
-    icon: Globe,
-    title: "Distributed Laptop Server",
-    desc: "Concept of using multiple laptops as a distributed server cluster for cost-efficient infrastructure.",
-    tech: ["Networking", "Linux", "Architecture"],
-    color: "secondary" as const,
+    wip: true,
   },
 ];
 
@@ -54,8 +76,13 @@ const ProjectsSection = () => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              className="glass-card rounded-xl p-6 hover:border-primary/40 transition-all group"
+              className="glass-card rounded-xl p-6 hover:border-primary/40 transition-all group relative"
             >
+              {p.wip && (
+                <span className="absolute top-4 right-4 inline-flex items-center gap-1 text-xs font-mono px-2.5 py-1 rounded-full border border-secondary text-secondary">
+                  <Construction size={12} /> In Progress
+                </span>
+              )}
               <div className={`inline-flex p-3 rounded-lg mb-4 ${p.color === "primary" ? "bg-primary/10" : "bg-secondary/10"}`}>
                 <p.icon className={p.color === "primary" ? "text-primary" : "text-secondary"} size={24} />
               </div>
