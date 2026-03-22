@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const categories = [
   {
     title: "Programming",
-    skills: ["C", "Python", "TypeScript"],
+    skills: ["C", "Python", "Bash"],
   },
   {
     title: "Cybersecurity",
@@ -11,7 +11,7 @@ const categories = [
   },
   {
     title: "Tools & Technologies",
-    skills: ["Linux", "MySQL", "Networking Basics", "n8n"],
+    skills: ["Linux", "MySQL", "Networking Basics", "n8n","Git", "Docker"],
   },
   {
     title: "Other",

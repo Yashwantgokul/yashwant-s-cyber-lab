@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Mail, Github, Linkedin, FileDown, ExternalLink } from "lucide-react";
+import { Mail, Github, Linkedin, FileDown } from "lucide-react";
 
 const ContactSection = () => {
   return (
@@ -39,12 +39,6 @@ const ContactSection = () => {
             </a>
             <a href="https://www.linkedin.com/in/yashwant-gokul-p-b25a16218/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="LinkedIn">
               <Linkedin size={22} />
-            </a>
-            <a href="https://leetcode.com/u/yashwantgokul1/" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-primary transition-colors" aria-label="LeetCode">
-              <ExternalLink size={22} />
-            </a>
-            <a href="https://tryhackme.com/p/yashwantgokul1" target="_blank" rel="noopener noreferrer" className="text-muted-foreground hover:text-secondary transition-colors" aria-label="TryHackMe">
-              <ExternalLink size={22} />
             </a>
           </div>
         </motion.div>
