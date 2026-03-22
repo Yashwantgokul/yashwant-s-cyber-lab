@@ -5,6 +5,7 @@ import SkillsSection from "@/components/SkillsSection";
 import ExperienceSection from "@/components/ExperienceSection";
 import AchievementsSection from "@/components/AchievementsSection";
 import ProjectsSection from "@/components/ProjectsSection";
+import StatsSection from "@/components/StatsSection";
 import ContactSection from "@/components/ContactSection";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
       <ExperienceSection />
       <AchievementsSection />
       <ProjectsSection />
+      <StatsSection />
       <ContactSection />
       <footer className="py-8 text-center text-sm text-muted-foreground border-t border-border">
         © {new Date().getFullYear()} Yashwant Gokul P — Built with passion & security in mind.
