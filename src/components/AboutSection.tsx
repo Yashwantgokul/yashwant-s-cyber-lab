@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { Shield, Code, Server, GraduationCap } from "lucide-react";
 
 const highlights = [
-  { icon: Shield, label: "Cybersecurity", desc: "CTF design & exploitation" },
-  { icon: Code, label: "Development", desc: "Python, C++, SQL" },
-  { icon: Server, label: "Systems", desc: "Docker, Linux, Networking" },
-  { icon: GraduationCap, label: "Self-Taught", desc: "Beyond curriculum" },
+  { icon: Shield, label: "Cybersecurity", desc: "CTF, Web Exploitation, Forensics" },
+  { icon: Code, label: "Development", desc: "C, Python, TypeScript" },
+  { icon: Server, label: "Systems", desc: "Linux, MySQL, Networking" },
+  { icon: GraduationCap, label: "B.Tech CS", desc: "VIT Chennai (2025–2029)" },
 ];
 
 const AboutSection = () => {
@@ -22,11 +22,9 @@ const AboutSection = () => {
             <span className="text-gradient">About</span> Me
           </h2>
           <p className="text-muted-foreground max-w-2xl text-lg leading-relaxed mb-12">
-            I'm a highly motivated student and aspiring cybersecurity
-            professional with hands-on experience building applications,
-            experimenting with system security, and designing real-world
-            inspired projects. I enjoy breaking systems to understand them
-            better — and rebuilding them stronger.
+            Cybersecurity enthusiast and developer focused on building secure
+            systems and solving real-world problems. Actively participates in
+            CTF challenges and develops practical applications.
           </p>
         </motion.div>
 
@@ -56,17 +54,17 @@ const AboutSection = () => {
           className="mt-16 glass-card rounded-xl p-8"
         >
           <h3 className="text-xl font-bold mb-4 flex items-center gap-2">
-            <GraduationCap className="text-primary" size={22} /> Education & Learning
+            <GraduationCap className="text-primary" size={22} /> Education
           </h3>
-          <p className="text-muted-foreground mb-3">
-            Currently pursuing higher secondary education — while self-learning advanced topics:
-          </p>
-          <div className="flex flex-wrap gap-2">
-            {["Cybersecurity Fundamentals", "Networking (CCNA-level)", "Operating Systems", "Python", "C++", "CTF Challenges", "Online Courses"].map((t) => (
-              <span key={t} className="text-xs font-mono px-3 py-1.5 rounded-full border border-border text-muted-foreground hover:border-primary/50 hover:text-primary transition-colors">
-                {t}
-              </span>
-            ))}
+          <div className="space-y-3 mb-6">
+            <div>
+              <p className="text-foreground font-medium">B.Tech Computer Science</p>
+              <p className="text-sm text-muted-foreground">VIT Chennai — 2025–2029</p>
+            </div>
+            <div>
+              <p className="text-foreground font-medium">Higher Secondary</p>
+              <p className="text-sm text-muted-foreground">DAV Chennai</p>
+            </div>
           </div>
         </motion.div>
       </div>
