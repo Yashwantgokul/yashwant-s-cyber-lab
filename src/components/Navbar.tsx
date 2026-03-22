@@ -28,8 +28,8 @@ const Navbar = () => {
     >
       <div className="container mx-auto flex items-center justify-between px-6">
         <a href="#" className="text-xl font-bold tracking-tight">
-          <span className="text-gradient">Yashwant</span>
-          <span className="text-foreground"> G.</span>
+          <span className="text-gradient">Y</span>
+          <span className="text-foreground">G</span>
         </a>
 
         {/* Desktop */}

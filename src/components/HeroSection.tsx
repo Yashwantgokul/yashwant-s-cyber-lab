@@ -19,7 +19,7 @@ const HeroSection = () => {
           </p>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-6">
             Hi, I'm{" "}
-            <span className="text-gradient glow-text">Yashwant</span> —<br />
+            <span className="text-gradient glow-text">Yashwant Gokul P</span> —<br />
             I build secure, scalable systems.
           </h1>
           <p className="text-muted-foreground text-lg max-w-xl mb-8 leading-relaxed">
