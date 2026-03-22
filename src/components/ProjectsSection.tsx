@@ -46,9 +46,9 @@ const projects = [
   },
   {
     icon: FlaskConical,
-    title: "CTF Platform (Docker-Based)",
-    desc: "Custom cybersecurity challenges with real-world attack scenarios including SSTI exploitation, RSA challenges, and AI exploitation simulation.",
-    tech: ["Docker", "Python", "Web Backend"],
+    title: "CTF Hosting Platform",
+    desc: "Custom CTF hosting platform with dynamic flag generation, real-world attack scenarios including SSTI exploitation, RSA challenges, and AI exploitation simulation.",
+    tech: ["Python", "Web Backend", "Dynamic Flags"],
     color: "primary" as const,
     wip: true,
   },
