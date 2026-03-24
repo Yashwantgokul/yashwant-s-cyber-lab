@@ -26,7 +26,8 @@ const ContactSection = () => {
               <Mail size={18} /> Email Me
             </a>
             <a
-              href="#"
+              href="/resume/ygresume.pdf"
+              download="ygresume.pdf"
               className="inline-flex items-center gap-2 border border-border text-foreground px-5 py-3 rounded-lg font-medium hover:border-primary hover:text-primary transition-colors"
             >
               <FileDown size={18} /> Download Resume
